@@ -238,8 +238,7 @@ public class AtlasEditor_Activity {
 	public void Action() throws InterruptedException {
 	String[] expectedFileName = { "Atlas Editor" };
 
-	java.util.List<WebElement> locationElements = driver
-	.findElements(By.xpath("(//td[text()='SoftwareTesting Team'])[1]/following-sibling::td[1]"));
+	java.util.List<WebElement> locationElements = driver.findElements(By.xpath("(//td[text()='SoftwareTesting Team'])[1]/following-sibling::td[1]"));
 	String actualFileName = locationElements.get(0).getText();
 	Thread.sleep(2000);
 
