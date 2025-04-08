@@ -220,7 +220,7 @@ public class AtlasEditor_Activity {
 
 	@Test(priority = 4)
 	public void userName() throws InterruptedException {
-	String[] expectedFileName = { "SoftwareTesting Team" };
+	String[] expectedFileName = { "software team" };
 
 	java.util.List<WebElement> locationElements = driver
 	.findElements(By.xpath("(//td[text()='software team'])[1]"));
