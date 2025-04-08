@@ -36,7 +36,7 @@ public class AtlasEditor_Activity {
 	driver.manage().window().maximize();
 	String currentURL = driver.getCurrentUrl();
 	System.out.println("Current URL: " + currentURL);
-	WebDriverWait wait = new WebDriverWait(driver, 60);
+	WebDriverWait wait = new WebDriverWait(driver, 10);
 	driver.switchTo().defaultContent(); // Switch back to default content
 	// WebElement viewerElement = wait
 	// .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@title='Viewer']")));
