@@ -38,14 +38,14 @@ public class AtlasEditor_Activity {
 	System.out.println("Current URL: " + currentURL);
 	WebDriverWait wait = new WebDriverWait(driver, 60);
 	driver.switchTo().defaultContent(); // Switch back to default content
-	WebElement viewerElement = wait
-	.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@title='Viewer']")));
-	if (viewerElement.isEnabled() && viewerElement.isDisplayed()) {
-	viewerElement.click();
-	System.out.println("Viewer icon is clicked");
-	} else {
-	System.out.println("Viewer icon is not clickable");
-	}
+	// WebElement viewerElement = wait
+	// .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@title='Viewer']")));
+	// if (viewerElement.isEnabled() && viewerElement.isDisplayed()) {
+	// viewerElement.click();
+	// System.out.println("Viewer icon is clicked");
+	// } else {
+	// System.out.println("Viewer icon is not clickable");
+	// }
 
 	String parentWindow = driver.getWindowHandle();
 	WebElement loginButton = wait
@@ -68,7 +68,7 @@ public class AtlasEditor_Activity {
 	WebElement emailInput = wait
 	.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='email']")));
 	if (emailInput != null && emailInput.isDisplayed()) {
-	emailInput.sendKeys("softwaretestingteam9@gmail.com");
+	emailInput.sendKeys("teamsoftware457@gmail.com");
 	System.out.println("Email was entered successfully.");
 	} else {
 	System.out.println("Email was not entered.");
