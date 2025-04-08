@@ -32,7 +32,7 @@ public class AtlasEditor_Activity {
 
 	@Test(priority = 1)
 	public void login() throws InterruptedException {
-	driver.get("https://apollo2.humanbrain.in/viewer/annotation/portal");
+	driver.get("https://apollo2.humanbrain.in");
 	driver.manage().window().maximize();
 	String currentURL = driver.getCurrentUrl();
 	System.out.println("Current URL: " + currentURL);
