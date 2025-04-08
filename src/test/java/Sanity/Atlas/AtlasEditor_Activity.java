@@ -223,7 +223,7 @@ public class AtlasEditor_Activity {
 	String[] expectedFileName = { "SoftwareTesting Team" };
 
 	java.util.List<WebElement> locationElements = driver
-	.findElements(By.xpath("(//td[text()='SoftwareTesting Team'])[1]"));
+	.findElements(By.xpath("(//td[text()='software team'])[1]"));
 	String actualFileName = locationElements.get(0).getText();
 	Thread.sleep(2000);
 
