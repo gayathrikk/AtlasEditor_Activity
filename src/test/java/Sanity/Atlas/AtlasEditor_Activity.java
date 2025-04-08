@@ -24,7 +24,7 @@ public class AtlasEditor_Activity {
 	public void setup() throws Exception {
 	DesiredCapabilities dc = DesiredCapabilities.chrome();
 	// URL url = new URL("http://172.20.23.7:5555/wd/hub");
-	URL url = new URL("http://172.20.23.92:4443/");
+	URL url = new URL("http://172.20.23.92:4444/");
 	driver = new RemoteWebDriver(url, dc);
 	wait = new WebDriverWait(driver, 30);
 
